@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Romanica";
+  src: url("../fonts/romanica/Romanica.ttf") format("truetype");
+}
+
+*{
+	font-family: 'Romanica', serif;
+	color: #222;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	margin-top: 100px;
+	font-family: 'Romanica', serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.count{
+	//width: 500px;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.count img{
+	margin: 0 20px;
+	height: 50px;
+	cursor: pointer;
+	transition: 0.1s ease-in;
+}
+
+.count img:hover{
+	filter: brightness(0.4);
+}
+
+.count input{
+	outline: none;
+	width: 150px;
+	padding: 10px;
+	text-transform: uppercase;
+	border: 2px #777 solid;
+	border-radius: 5px;
+}
+
+.alert{
+	//opacity: 0;
+	margin-top: 10px;
+	display: none;
+	font-size: 1em;
+	color: #777;
+}
+
+.alertShow{
+	display: block;
+	animation: showBlock 4s ease-in forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  20%{
+  	opacity: 1;
+  }
+  80%{
+  	opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
