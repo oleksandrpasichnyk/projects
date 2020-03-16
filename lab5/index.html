@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab#1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="content">
+		<svg></svg>
+		<div class="options">
+			<div id="line">
+				<p>Enter the line:</p>
+				<label for="x1">x1</label>
+				<input type="number" onfocus="this.value=''" id="x1">
+				<label for="y1">y1</label>
+				<input type="number" onfocus="this.value=''" id="y1">
+				<label for="x2">x2</label>
+				<input type="number" onfocus="this.value=''" id="x2">
+				<label for="y2">y2</label>
+				<input type="number" onfocus="this.value=''" id="y2">
+				<button type="button" class="btn btn-success" onclick="build_line()">Build the line</button>
+			</div>
+			<div class="footer">
+				<label for="r" id="rlabel">Pixel size: 1x1</label>
+				<input type="range" class="custom-range" min="1" max="10" step="1" id="r" value="1" onchange="zoom()">
+				<button type="button" class="btn btn-danger btn-lg clear" onclick="clear_canvas()">Clear the canvas</button>
+			</div>
+		</div>
+	</div>
+	<!--<label for="customRange3">Grid ticks</label>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script type="text/javascript" src="js/axis.js"></script>
+</body>
+</html>
