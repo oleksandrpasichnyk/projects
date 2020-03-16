@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab#1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="content">
+		<svg></svg>
+		<div class="options">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label onclick="click1()" class="btn btn-secondary active">
+					<input type="radio" name="options" id="option1" autocomplete="off" checked> Point
+				</label>
+				<label onclick="click2()" class="btn btn-secondary">
+					<input type="radio" name="options" id="option2" autocomplete="off"> Line
+				</label>
+				<label onclick="click3()" class="btn btn-secondary">
+					<input type="radio" name="options" id="option2" autocomplete="off"> Triangle
+				</label>
+			</div>
+
+			<div class="active-form" id="point">
+				<p>Enter the point:</p>
+				<label for="x">x</label>
+				<input type="number" onfocus="this.value=''" id="x">
+				<label for="y">y</label>
+				<input type="number" onfocus="this.value=''" id="y">
+				<button type="button" class="btn btn-success" onclick="build_point()">Build the point</button>
+			</div>
+
+			<div class="hidden-form" id="line">
+				<p>Enter the line:</p>
+				<label for="x1">x1</label>
+				<input type="number" onfocus="this.value=''" id="x1">
+				<label for="y1">y1</label>
+				<input type="number" onfocus="this.value=''" id="y1">
+				<label for="x2">x2</label>
+				<input type="number" onfocus="this.value=''" id="x2">
+				<label for="y2">y2</label>
+				<input type="number" onfocus="this.value=''" id="y2">
+				<button type="button" class="btn btn-success" onclick="build_line()">Build the line</button>
+			</div>
+
+			<div class="hidden-form" id="triangle">
+				<p>Enter the triangle:</p>
+				<label for="tr_x1">x1</label>
+				<input type="number" onfocus="this.value=''" id="tr_x1">
+				<label for="tr_y1">y1</label>
+				<input type="number" onfocus="this.value=''" id="tr_y1">
+				<label for="tr_x2">x2</label>
+				<input type="number" onfocus="this.value=''" id="tr_x2">
+				<label for="tr_y2">y2</label>
+				<input type="number" onfocus="this.value=''" id="tr_y2">
+				<label for="tr_x3">x3</label>
+				<input type="number" onfocus="this.value=''" id="tr_x3">
+				<label for="tr_y3">y3</label>
+				<input type="number" onfocus="this.value=''" id="tr_y3">
+				<button type="button" class="btn btn-success" onclick="build_triangle()">Build the triangle</button>
+			</div>
+
+			<!-- <div class="matrix">
+				<p>Matrix:</p>
+				<div class="row">
+					<input type="number" name="11" value="1" id="11" step="0.01" onfocus="this.value=1">
+					<input type="number" name="12" value="0" id="12" step="0.01" onfocus="this.value=0">
+					<input type="number" name="13" value="0" id="13" step="0.01" onfocus="this.value=0">
+				</div>
+				<div class="row">
+					<input type="number" name="21" value="0" id="21" step="0.01" onfocus="this.value=0">
+					<input type="number" name="22" value="1" id="22" step="0.01" onfocus="this.value=1">
+					<input type="number" name="23" value="0" id="23" step="0.01" onfocus="this.value=0">
+				</div>
+				<div class="row">
+					<input type="number" name="31" value="0" id="31" step="0.01" onfocus="this.value=0">
+					<input type="number" name="32" value="0" id="32" step="0.01" onfocus="this.value=0">
+					<input type="number" name="33" value="1" id="33" step="0.01" onfocus="this.value=1">
+				</div>
+				<button id="btn1" class="btn btn-primary" onclick="apply_matrix()">Apply matrix</button>
+			</div> -->
+
+		</div>
+	</div>
+	<!--<label for="customRange3">Grid ticks</label>-->
+	<div class="footer">
+		<input type="range" class="custom-range" min="4" max="18" step="7" id="customRange3" value="9" onchange="zoom()">
+		<button type="button" class="btn btn-danger btn-lg clear" onclick="clear_canvas()">Clear the canvas</button>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script type="text/javascript" src="js/axis.js"></script>
+</body>
+</html>
