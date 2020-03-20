@@ -12,4 +12,7 @@ My sites and projects
 
 [Matrix transform using OpenGL](https://oleksandrpasichnyk.github.io/matrix_transform/)
 
+[Bilineal interpolation](https://oleksandrpasichnyk.github.io/bilineal_interpolation/)
+
+
 
