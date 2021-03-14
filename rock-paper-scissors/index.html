@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="rules">
+          <h4>Rules of game:</h4>
+          <ul>
+            <li>Scissors beats a paper</li>
+            <li>Paper beats rock</li>
+            <li>Rock beats scissors</li>
+            <li>And we play up to three wins!</li>
+          </ul>
+        </div>
+        <h1 class="title">Let's play!</h1>
+        <div class="game-field">
+          <div class="player1-field player-field">
+            <h2 class="player-title">YOU</h2>
+            <div class="player1-img-container img-container"></div>
+          </div>
+          <div class="player2-field player-field">
+            <h2 class="player-title">COMPUTER</h2>
+            <div class="player2-img-container img-container"></div>
+          </div>
+        </div>
+        <div class="game-buttons">
+          <div class="game-actions-buttons">
+            <button data-role="Scissors" class="scissors-btn"><img src="./img/scissors.png" alt="scissors">
+              <p>Scissors</p>
+            </button>
+            <button data-role="Paper" class="paper-btn"><img src="./img/paper.png" alt="paper">
+              <p>Paper</p>
+            </button>
+            <button data-role="Rock" class="rock-btn"><img src="./img/rock.png" alt="rock">
+              <p>Rock</p>
+            </button>
+          </div><a class="reset-link">Reset</a>
+        </div>
+        <div class="result-field"></div>
+        <script src="./js/index.js"></script>
+        <!-- <script type="module" src="./js/game.js"></script> -->
+      </div>
+    </section>
+  </body>
+</html>
