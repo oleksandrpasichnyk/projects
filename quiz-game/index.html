@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container menu">
+      <button class="btn" id="start-btn">Start new game</button>
+      <h1 class="logo">QuizGame</h1>
+      <button class="btn" id="skip-btn">Skip question</button>
+    </div>
+  </header>
+  <section>
+    <div id="result-area">
+      <h1 id="result-text"></h1>
+    </div>
+    <div class="container">
+      <div id="quiz-area">
+        <h1 id="question-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam repellat iste saepe.</h1>
+        <div id="answers">
+          <div class="answer-1 answer">
+            <p id="answer-1-text" class="answer-1 answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aspernatur?</p>
+            <p class="answer-1 answer-number">1</p>
+          </div>
+          <div class="answer-2 answer">
+            <p id="answer-2-text" class="answer-2 answer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem voluptate commodi hic eaque laboriosam? Perferendis?</p>
+            <p class="answer-2 answer-number">2</p>
+          </div>
+          <div class="answer-3 answer">
+            <p id="answer-3-text" class="answer-3 answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore explicabo non nostrum.</p>
+            <p class="answer-3 answer-number">3</p>
+          </div>
+          <div class="answer-4 answer">
+            <p id="answer-4-text" class="answer-4 answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, pariatur!</p>
+            <p class="answer-4 answer-number">4</p>
+          </div>
+        </div>
+        <p>Total prize: <span id="total-prize"></span></p>
+        <p>Prize on current round: <span id="current-round-prize"></span></p>
+      </div>
+    </div>
+  </section>
+  <script src="./src/js/questions.js"></script>
+  <script src="./src/js/app.js"></script>
+</body>
+</html>
