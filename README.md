@@ -1,6 +1,4 @@
-# oleksandrpasichnyk.github.io
-
-My sites and projects
+# My sites and projects
 
 [Rock Paper Scissors](https://oleksandrpasichnyk.github.io/projects/rock-paper-scissors/)
 
