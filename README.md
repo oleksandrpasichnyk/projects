@@ -2,6 +2,8 @@
 
 My sites and projects
 
+[Rock Paper Scissors](https://oleksandrpasichnyk.github.io/rock-paper-scissors/)
+
 [Memory game](https://oleksandrpasichnyk.github.io/memory_game/)
 
 [Tic Tac Toe game](https://oleksandrpasichnyk.github.io/tic-tac-toe/)
@@ -17,5 +19,3 @@ My sites and projects
 [Bilineal interpolation](https://oleksandrpasichnyk.github.io/bilineal_interpolation/)
 
 [Aviasales site](https://oleksandrpasichnyk.github.io/aviasales/)
-
-
