@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Modules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="./build/css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <h2 class="highlight"></h2>
+      <div class="grid">
+        <table class="game-field">
+          <tr>
+            <td data-row="1" data-col="1"></td>
+            <td data-row="1" data-col="2"></td>
+            <td data-row="1" data-col="3"></td>
+          </tr>
+          <tr>
+            <td data-row="2" data-col="1"></td>
+            <td data-row="2" data-col="2"></td>
+            <td data-row="2" data-col="3"></td>
+          </tr>
+          <tr>
+            <td data-row="3" data-col="1"></td>
+            <td data-row="3" data-col="2"></td>
+            <td data-row="3" data-col="3"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="game-data">
+        <div class="scores-fiels">
+          <h4><span class="player1-name">Player 1 (o)</span>: <span class="player1-score"></span></h4>
+          <h4><span class="player2-name">Player 2 (x)</span>: <span class="player2-score"></span></h4>
+        </div>
+        <h4 class="winner-field"></h4>
+      </div>
+      <div class="buttons">
+        <button class="new-game-btn btn">New game</button>
+        <button class="reset-btn btn">Reset</button>
+      </div>
+    </div>
+  </section>
+  <script src="./build/js/bundle.js"></script>
+</body>
+
+</html>

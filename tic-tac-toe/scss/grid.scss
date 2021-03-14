@@ -1,0 +1,28 @@
+table {
+  margin: 0 auto;
+  border: 2px #333 solid;
+  width: 500px;
+  height: 500px;
+  border-spacing: 0;
+}
+
+td {
+  border: 2px #333 solid;
+  width: 33%;
+  height: 33%;
+  cursor: pointer;
+}
+
+.cell-img {
+  display: flex;
+}
+
+.cell-img svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.highlighted-td {
+  background-color: lightcoral;
+}

@@ -9,15 +9,15 @@
 </head>
 
 <body>
-	<h1>Авиасалес</h1>
+	<h1>Aviasales</h1>
 	<main>
 
 		<section class="wrapper">
 			<form class="form-search">
 				<div class="wrapper__search">
 					<div class="input" style="display: block;">
-						<label>Откуда
-							<input type="text" class="input__cities-from" required>
+						<label>From
+							<input type="text" value="Lviv" class="input__cities-from" required>
 						</label>
 						<ul class="dropdown dropdown__cities-from">
 
@@ -25,8 +25,8 @@
 					</div>
 
 					<div class="input">
-						<label>Куда
-							<input type="text" class="input__cities-to" required>
+						<label>To
+							<input type="text"  value="Warsaw" class="input__cities-to" required>
 						</label>
 						<ul class="dropdown dropdown__cities-to">
 
@@ -34,29 +34,28 @@
 					</div>
 
 					<div class="input input__cities-from">
-						<label>Отправление
-							<input type="date" class="input__date-depart" required>
+						<label>Depart day
+							<input type="date" value="2020-05-01" class="input__date-depart" required>
 						</label>
 					</div>
 				</div>
 
 				<div class="wrapper__button">
 					<button type="submit" class="button button__search">
-						<span class="button__search-text">Найти билеты</span>
+						<span class="button__search-text">Find ticket</span>
 					</button>
 				</div>
 			</form>
 		</section>
 		<section class="wrapper">
 
-			<!-- <section class="wrapper__ticket" id="cheapest-ticket">
-				<h2>Самый дешевый билет на выбранную дату</h2>
+			<section class="wrapper__ticket" id="cheapest-ticket">
 				
-			</section> -->
+			</section>
 
-			<!-- <section class="block__ticket" id="other-cheap-tickets">
-				<h2>Самые дешевые билеты на другие даты</h2>
-			</section> -->
+			<section class="block__ticket" id="other-cheap-tickets">
+			</section>
+
 		</section>
 
 
