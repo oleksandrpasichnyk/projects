@@ -4,6 +4,8 @@ My sites and projects
 
 [Memory game](https://oleksandrpasichnyk.github.io/memory_game/)
 
+[Tic Tac Toe game](https://oleksandrpasichnyk.github.io/tic-tac-toe/)
+
 [Roman to decimal numerals converter](https://oleksandrpasichnyk.github.io/roman_converter/)
 
 [Sea battle game](https://oleksandrpasichnyk.github.io/sea_battle/)
